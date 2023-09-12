@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'restaurant-thingie';
+    selectedPage: string = 'recipe';
+
+    onSelectedLink(selectedLink: string) {
+        this.selectedPage = selectedLink;
+    }
 }
